@@ -2,67 +2,98 @@
 
 \section{Introductie} % The \section*{} command stops section numbering
 \label{sec:introductie}
-Mijn onderzoek zal gaan over de toekomst van mainframe. Doordat ik zelf in de wereld van mainframe ben terecht gekomen, word ik vaak geconfronteerd
-met verschillende problemen die op duiken. Dat gaf mij dan ook het idee om hierover een onderzoek te starten. De volgende problemen zijn op dit moment de voornaamste die zich voordoen:
+Big Iron of mainframes zijn zeer grote computers die gebruikt worden door vaak grote instituten en bedrijven. Zij gebruiken deze technologie om veel en meerdere gebruikers tegelijk alles te bieden wat ze nodig hebben op vlak van data. Mainframes zijn in staat om enorme hoeveelheden data te verwerken op een snelle en consistente manier \autocite{Ebbers2016}. Dit soort legacy systemen gaan al mee sinds de jaren 50 en worden de dag van vandaag nog steeds gebruikt. Daarom is er een onderzoek nodig naar het wegstappen van deze legacy systemen en het moderniseren naar meer hedendaagse technologieën zoals de cloud. Het is belangrijk om een beeld te krijgen van hoe realistisch dit is. Als gevolg hiervan zal eventueel ook de nood aan mainframetechnologie binnen de moderne maatschappij duidelijk worden. Mijn verwachtingen zijn dat het heel complex en duur is om hiervan weg te stappen. Er draaien dagelijks miljoenen batchprogramma’s en transacties om zaken te verrichten die we vanzelfsprekend vinden. Er zijn heel wat problemen dat deze transformatie met zich meebrengt  \autocite{Long2018}.
 \begin{itemize}
-  \item het tekort aan COBOL en PL/1 programmeurs of personen met de juiste skills
-  \item de migratie van mainframe naar cloud computing
-  \item de modernisering van z/OS
-  \item het updaten van 'legacy' mainframe afhankelijke applicaties
-  \item de onderhoudskosten van een mainframe
+    \item Mainframe afhankelijke applicaties
+    \item Code refactoring
+    \item Workload complexiteit
+    \item Kosten
+    \item Risico's
+    \item Databank specifieke problemen zoals gedeelde opslag
 \end{itemize}
-Al deze problemen vormen een bedreiging voor het verder bestaan van de mainframe. In dit onderzoek ga ik proberen elke probleem individueel te verdelen in kleinere deelproblemen om zo dieper te kunnen graven. Mijn doel is om de resultaten van deze onderzoeken te gaan vergelijken met de meningen van zowel experts binnen de ontwikkeling bij IBM, de mensen die dagelijks werken op mainframe en de managers van grote bedrijven zonder IT kennis. Dit is namelijk belangrijk om ook de financiële kant te bekijken. De volgende onderzoeksvragen zijn voor deze problemen het meest relevant:
-\begin{itemize} 
-  \item Is er een tekort aan mensen met de juiste skills?
-  \item Welke ontwikkelingen vinden er nu nog plaats in de mainframe wereld?
-  \item Hoe zal de mainframe zich verdedigen tegen de opkomst van cloud computing?
-  \item Welk effect zal de doorbraak van quantum computing hebben op de mainframe technologie die we vandaag kennen?
-  \item Wat is het gemiddelde kostenplaatje van een mainframe binnen een bedrijf?
+Deze problemen maken het een complex gegeven om zomaar van de ene dag op de andere een volledige mainframe-infrastructuur om te gooien naar een gedistribueerde systemen. Hoe moeilijk dit is zal afgeleid kunnen worden uit dit onderzoek. De volgende onderzoeksvragen zijn hiervoor belangrijk:
+\begin{itemize}
+    \item Welke alternatieven bestaan er en wat zijn de voor- en nadelen tegenover een mainframe?
+    \item Welke technologieën worden er op dit moment nog ontwikkeld?
+    \item Zullen we ooit kunnen wegstappen van de mainframe?
 \end{itemize}
-Als het onderzoek een duidelijk en gestaafd antwoord geeft op elk van deze vragen, dan zullen we een klaar en duidelijk antwoord kunnen geven op 
-de titel van deze bachelorproef.
+\textbf{De algemene probleemstelling:} wegstappen van legacy systemen is complex en duur \newline
+\textbf{Doelstelling van het onderzoek:} onderzoeken wat de toekomst inhoudt voor mainframes \newline
+\textbf{De hoofdvraag:} zijn alternatieven zoals Google Cloud G4 Platform goed genoeg om mainframes effectief te vervangen?
 
 %---------- Stand van zaken ---------------------------------------------------
 
 \section{Sneak peek}
 \label{sec:state-of-the-art}
+In 1991 had technologie journalist voorspeld Stewart Alsop dat op 15 maart 1996, de laatste mainframe uitgeschakeld zou worden. Gedistribueerde systemen zou de toekomst zijn, doch ondanks deze voorspellingen bestaat de mainframe in 2022 nog steeds \autocite{Barnett2005}. IBM heeft nu met de Z series al een initiatief genomen om de mainframe in te zetten als essentieel deel van een hybrid cloud strategie. IBM blijft steeds innoveren op vlak van prijs en innovatie \autocite{Smolaks2021}. Echter ondanks deze innovaties zijn de kosten van mogelijke alternatieven alsmaar interessanter aan het worden voor bedrijven. Als gevolg hiervan is het voor vele een goede optie om weg te migreren van hun mainframe-infrastructuur. Er zijn daarentegen ook al verschillende bedrijven zoals Micro Focus en Sun die “Middleware” aanbieden dat dient als een emulator voor een mainframe-omgeving. Dat zorgt ervoor dat klanten hun mainframespecifieke programma’s kunnen migreren zonder het herschrijven van de code. Dit wordt ook wel “drag and drop migration” genoemd. Het is altijd een hoog risico om legacy applicaties te gaan vernieuwen. Het doel van deze inspanningen komt altijd neer op het verlagen van de hardware kosten die legacy systemen met zich meebrengen. Vaak zijn de kosten daarentegen van het vernieuwen van de applicaties hoger dan wat men zou uitsparen met goedkopere hardware platformen \autocite{Bingell2014}. Mainframes brengen jammer genoeg heel wat nadelen met zich mee die de drang naar migratie alleen maar versterken. Een daarvan is het tekort aan experts. Vele onder hen zijn de pensioenleeftijd aan het naderen en heel wat bedrijven hebben nog geen concrete beleidsplannen klaar om dit probleem aan te pakken volgens het onderzoek van Meta Group in 2004 \autocite{Bakker2006}. Werknemers die gestart zijn in 1970 en 1980 zijn nu het einde van hun carrière aan het naderen. Dit geeft veel bedrijven nog een extra reden om weg te migreren van hun ‘Big Iron’ infrastructuur. Alsook bieden weinig scholen nog een opleiding aan voor mainframe expert. Hogeschool Gent is de enige hogeschool in België waar je kan afstuderen als mainframe expert.
 
-\subsection*{Vergrijzing} 
-
-De huidige situatie rond mensen met de juiste skills om op een mainframe te werken, is meer en meer schaars aan het worden. Er is een hele harde 'war on talent' aan de gang. Dat is te verklaren doordat de personen die al jaar en dag op mainframe werken de pensioenleeftijd benaderen. Echter ook zeker omdat er weinigen afstuderen als COBOL of PL1 programmeur. Dit probleem heeft een verband met het ontstaan van de mainframe. De eerste mainframe, namelijk de S/360 van IBM, werd geïntroduceerd op 7 april 1964 \autocite{Elliot2005}. Het was revolutionair dat er voor het eerst een computer was, die in staat was om allerlei toepassingen te verwerken op een performante manier. Dat is ondertussen al 57 jaar geleden. De ontwikkelaars die opgegroeid zijn met de mainframe, naderen nu in versneld tempo de pensioenleeftijd. Nergens is die probleem zo prominent aanwezig dan in de mainframewereld. In 2002 heeft Meta Group hierover een onderzoek gedaan \autcite{Bakker2006}. Hieruit was gebleken dat meer dan 90 procent van de bevraagde bedrijven, geen beleidsplannen hadden om die vergrijzing op te vangen. Evenees is gebleken dat 50 procent van de mainframespecialisten ouder was dan 50 jaar. Dit onderzoek is ondertussen 19 jaar geleden.
-
-\subsection*{System/360 geschiedenis} 
-
-IBM S/360 is een familie van mainframe systemen. Als dit op 7 april 1964 \autocite{Elliot2005} voor het eerst het daglicht zag, was dit uitzonderlijk revolutionair. Op deze systemen kon een volledige dekking aan toepassingen, van klein tot groot, zowel commercieel als wetenschappelijk op uitgevoerd worden. Binnen de S/360 werden er een hele reeks nieuwe computers ontwikkeld, van groot tot klein, van lage tot hoge prestaties, maar met allemaal dezelfde instructieset. Hierdoor konden gebruikers makkelijk upgraden naar grotere systemen naarmate hun behoefte hiertoe leidde. Hiervoor waren er geen dure en complexe applicatie veranderingen nodig. Compatibiliteit was het sleutelwoord bij de introductie van S/360 systemen. 
-
+ 
 
 %---------- Methodologie ------------------------------------------------------
-\section{Methodologie}
+\section{Methodologie} 
 \label{sec:methodologie}
-
-Ik ga mijn onderzoek zoveel mogelijk aan de realiteit op het werkveld te koppelen. Dit hoop ik te bereiken door langs te gaan bij de bedrijven in België die werken met mainframe, en tot slot, de plaats waar hij wordt ontwikkeld, IBM in Montpellier. Op deze plaatsen hoop ik de juiste mensen te vinden om zoveel mogelijk informatie te verkrijgen en daaruit de juiste conclusies te kunnen trekken. Met op voorhand opgestelde vragenlijsten zal ik naar deze bedrijven gaan. Bij de mensen van mijn stageplaats zal ik dan werken met Google Forms, die ik zal rondsturen naar het personeel. Ook ga ik mij verdiepen in de geschiedenis van de mainframe door een diepe literatuurstudie te doen en zoveel deel te nemen aan introducties of keynotes van nieuwe technologieën voor de mainframe. Ten slotte zal ik zelf proberen te argumenteren door mijn stageprojecten dat de mainframe zeker nog niet uitstervend is.
-
-Zaken die bevraagd zullen worden:
-\begin{itemize} 
-\item Gebruiksvriendelijkheid van besturingssysteem
-\item Meningen van ervaren programmeurs en systeem administrators
-\item Opkomende ontwikkelingen
-\item Gevoel over mainframe bij hoger management
-\item Kostenberekeningen per jaar voor een mainframe 
-\item Beleidsplannen geschoold persoon die pensioenleeftijd bereiken
-\item IBM's visie over quantum computing op hun mainframes 
+De verzameling van data zal gebeuren door: \newline
+Literatuur onderzoek:
+\begin{itemize}
+    \item AWS, Google Cloud G4 platform 
+    \item Technische sterktes en zwaktes van mainframe en cloud (vergelijkende studie)
+    \item Geschiedenis van mainframes
+    \item Noodzaak in huidige maatschappij a.d.h.v. mainframe specifieke use cases
 \end{itemize}
-
-Deze zaken kunnen tijdens het onderzoek uitbreiden of aangepast worden. 
+Interviews binnen bedrijven zoals IBM, Nationaal Verbond Van Socialistische Mutualiteiten, Arselor Mittal, Colruyt.. Deze interviews zullen voornamelijk gaan over:
+\begin{itemize}
+     \item Beleidsplannen omtrent vergrijzing en tekort aan specialisten
+     \item Migratieplannen
+     \item Financiële situatie
+     \item IBM Modernisatie en nieuwe technologieën 
+     \item Redenen om te migreren naar alternatief
+\end{itemize}
+Het volgen van introducties van nieuwe technologie, hetzij ten voordele of ten nadele van de mainframe, zal ook gebeuren in het onderzoek. Hieruit kan een vergelijkende studie gedaan worden. Ook zal er meegewerkt worden aan een project binnen “Nationaal Verbond Van Socialistische Mutualiteiten”. Dit project omvat de modernisering van programma’s die maandelijkse boekhoudafsluitingen verwerken. Deze programma’s moeten momenteel dagelijks de boekafsluitingen voorzien. Aan de hand van dit project zal er onderzocht worden of dat ook efficiënt en veilig zou kunnen in een cloud omgeving. \newpage
 %---------- Verwachte resultaten ----------------------------------------------
 \section{Verwachte resultaten}
 \label{sec:verwachte_resultaten}
+De eerste voorbeeldgrafiek is een vergelijking van de gemiddelde leeftijd van IT'ers binnen verschillende domeinen. Zie figuur \ref{fig:chart1}. \newline
+Op de tweede voorbeeldgrafiek wordt er onderzocht wat de verhouding is tussen afstuderende mainframe experts, diegene die de pensioenleeftijd naderen en die ertussenin. Zie figuur \ref{fig:chart2}. \newline
+Op de derde voorbeeldgrafiek wordt er gekeken naar te onderzoeken kostenfactoren die mainframes en gedistribueerde systemen met zich meebrengen. Zie figuur \ref{fig:chart3}. \newline
+Op de vierde voorbeeldgrafiek worden de MIPS (Millions of instructions per second) vergeleken tussen bepaalde mainframe modellen en gedistribueerde systemen. Zie figuur \ref{fig:chart4}. \newline
 
-Hier beschrijf je welke resultaten je verwacht. Als je metingen en simulaties uitvoert, kan je hier al mock-ups maken van de grafieken samen met de verwachte conclusies. Benoem zeker al je assen en de stukken van de grafiek die je gaat gebruiken. Dit zorgt ervoor dat je concreet weet hoe je je data gaat moeten structureren.
 
 %---------- Verwachte conclusies ----------------------------------------------
 \section{Verwachte conclusies}
 \label{sec:verwachte_conclusies}
+Mijn verwachtingen uit het onderzoek zijn in het voordeel van een mainframe. Volgens mij gaat het nog veel jaren duren vooraleer de mainframe effectief volledig zal vervangen worden door gedistribueerde systemen zoals AWS. Daarentegen heb ik wel slechte verwachtingen als het gaat over de populariteit en het studieaanbod voor het aanleren van mainframespecifieke skills. Als we deze problemen goed kunnen aanpakken in de toekomst en werken aan de gebruiksvriendelijkheid van een mainframe, dan ziet de toekomst van de mainframe er volgens mij zeer rooskleurig uit. Ten slotte verwacht ik te concluderen uit het onderzoek dat het migreren naar een cloud omgeving heel wat problemen met zich mee zullen brengen, zowel op vlak van veiligheid, stabiliteit als kostefficiëntie. 
+\begin{figure}
+    \centering
+    \begin{subfigure}{0.3\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{../../../Chart1}
+    \caption{}
+    \label{fig:chart1}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../../Chart2}
+        \caption{}
+        \label{fig:chart2}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../../Chart3}
+        \caption{}
+        \label{fig:chart3}
+    \end{subfigure}
+    \hfill
+    \begin{subfigure}{0.3\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{../../../Chart4}
+        \caption{}
+        \label{fig:chart4}
+    \end{subfigure}
+\caption{Voorbeeld diagrammen}
+\end{figure}
 
-Hier beschrijf je wat je verwacht uit je onderzoek, met de motivatie waarom. Het is \textbf{niet} erg indien uit je onderzoek andere resultaten en conclusies vloeien dan dat je hier beschrijft: het is dan juist interessant om te onderzoeken waarom jouw hypothesen niet overeenkomen met de resultaten.
+
+
 

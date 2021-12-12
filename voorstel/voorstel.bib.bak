@@ -13,4 +13,27 @@
   title        = {IBM wil tekort mainframe-experts oplossen},
 }
 
+@Online{Long2018,
+  author       = {Larry Long},
+  date         = {2018-06-28},
+  editor       = {Forbes},
+  title        = {The Top Five Mainframe Migration Issues Facing IT Leaders},
+  url          = {https://www.forbes.com/sites/forbestechcouncil/2018/06/28/the-top-five-mainframe-migration-issues-facing-it-leaders/?sh=698b1fbe66a7},
+  journaltitle = {Forbes},
+}
+
+@Online{Eenbergen2021,
+  author = {Coen van Eenbergen},
+  date   = {2021-11-30},
+  editor = {Techzine},
+  title  = {AWS biedt oplossing om mainframes te migreren naar de cloud},
+  url    = {https://www.techzine.nl/nieuws/cloud/471602/aws-biedt-oplossing-om-mainframes-te-migreren-naar-de-cloud/},
+}
+
+@Book{Ebbers2016,
+  author = {Mike Ebbers},
+  date   = {2016-03-01},
+  title  = {Introduction to the New Mainframe: IBM s/VSE Basics},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
