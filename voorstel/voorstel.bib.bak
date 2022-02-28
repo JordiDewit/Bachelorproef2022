@@ -36,4 +36,27 @@
   title  = {Introduction to the New Mainframe: IBM s/VSE Basics},
 }
 
+@Book{Barnett2005,
+  author = {Gary Barnett},
+  date   = {2005-10-01},
+  title  = {The future of the mainframe},
+}
+
+@Online{Smolaks2021,
+  author       = {Max Smolaks},
+  date         = {2021-12-08},
+  editor       = {DataCenter Knowledge},
+  title        = {IBM launces mainframe modernization initiative},
+  url          = {https://www.datacenterknowledge.com/cloud/ibm-launches-mainframe-modernization-initiative},
+  journaltitle = {DataCenter Knowledge},
+}
+
+@Thesis{Bingell2014,
+  author      = {Nichloas Dayl Bingell},
+  date        = {2014-12-01},
+  institution = {University of Oregon},
+  title       = {Cost Factors that influence ownership of mainframe or cloud-based data center environments},
+  type        = {mathesis},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
