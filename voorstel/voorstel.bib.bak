@@ -59,4 +59,11 @@
   type        = {mathesis},
 }
 
+@Article{Michael2021,
+  author       = {Michael},
+  date         = {2021-07-27},
+  journaltitle = {IBM upgraded its Big Iron OS for better cloud, security, and AI support},
+  title        = {Cooney},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
