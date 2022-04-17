@@ -7,4 +7,31 @@
   title        = {The mainframe envirionment: A thing of the past of the future?},
 }
 
+@Book{Ebbers2022,
+  author = {Mike Ebbers},
+  date   = {2022-03-01},
+  title  = {Introduction to the new mainframe},
+}
+
+@Article{Waites2013,
+  author       = {Stephune Waites},
+  date         = {2013-09-07},
+  journaltitle = {International Journal of Business, Humanities and Technology},
+  title        = {Lack of Mainframe Programmers a Critical Issue for IT OrganizationsA Review of the Literature},
+}
+
+@Article{McCracken2012,
+  author       = {Harry McCracken},
+  date         = {2012-08-28},
+  journaltitle = {Time},
+  title        = {The mainframe computer: can't kill it},
+}
+
+@Article{Johnson1988,
+  author       = {"A. M. Johnson" and "M. Malek"},
+  date         = {1988-12-04},
+  journaltitle = {ACM Computing Surveys},
+  title        = {Survey of software tools for evaluating reliability, availability and serviceability},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
