@@ -28,7 +28,7 @@
 }
 
 @Article{Johnson1988,
-  author       = {"A. M. Johnson" and "M. Malek"},
+  author       = {A. M. Johnson and M. Malek},
   date         = {1988-12-04},
   journaltitle = {ACM Computing Surveys},
   title        = {Survey of software tools for evaluating reliability, availability and serviceability},
