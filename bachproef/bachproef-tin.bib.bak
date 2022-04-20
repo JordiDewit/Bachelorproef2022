@@ -34,4 +34,18 @@
   title        = {Survey of software tools for evaluating reliability, availability and serviceability},
 }
 
+@Thesis{McGirr,
+  author      = {Gary McGirr and Rick Barker and Jack Decker and Gary Schmidt},
+  institution = {Washburn University},
+  title       = {Crisis with COBOL where industry and IT departments stand},
+  type        = {mathesis},
+}
+
+@Article{Mullins2016,
+  author       = {Craig Mullins},
+  date         = {2016-04-28},
+  journaltitle = {Planet Mainframe},
+  title        = {The mainframe Dilemma: Coping with an aging workforce},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
