@@ -89,4 +89,11 @@
   type        = {resreport},
 }
 
+@Article{Overby2017,
+  author       = {Stephanie Overby and Lynn Greiner and Lauren Gibbons Paul},
+  date         = {2017-07-05},
+  journaltitle = {CIO},
+  title        = {What is an SLA? Best practices for service-level agreements},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
