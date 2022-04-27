@@ -103,4 +103,18 @@
   title        = {IBM z16 tackles financial fraud and quantum hacks},
 }
 
+@TechReport{Astadia2021,
+  author      = {Astadia},
+  date        = {2021-04-01},
+  institution = {Astadia},
+  title       = {IBM z/OS Mainframe to Google Cloud Platform},
+}
+
+@TechReport{Zachry2022,
+  author      = {Mark Zachry},
+  date        = {2022-01-01},
+  institution = {Utah State University},
+  title       = {CONSTRUCTING USABLE DOCUMENTATION:A STUDY OF COMMUNICATIVE PRACTICESAND THE EARLY USES OF MAINFRAMECOMPUTING IN INDUSTRY},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
