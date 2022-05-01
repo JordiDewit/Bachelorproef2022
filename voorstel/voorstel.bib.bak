@@ -30,12 +30,6 @@
   url    = {https://www.techzine.nl/nieuws/cloud/471602/aws-biedt-oplossing-om-mainframes-te-migreren-naar-de-cloud/},
 }
 
-@Book{Ebbers2016,
-  author = {Mike Ebbers},
-  date   = {2016-03-01},
-  title  = {Introduction to the New Mainframe: IBM s/VSE Basics},
-}
-
 @Book{Barnett2005,
   author = {Gary Barnett},
   date   = {2005-10-01},
@@ -57,64 +51,6 @@
   institution = {University of Oregon},
   title       = {Cost Factors that influence ownership of mainframe or cloud-based data center environments},
   type        = {mathesis},
-}
-
-@Article{Michael2021,
-  author       = {Michael},
-  date         = {2021-07-27},
-  journaltitle = {IBM upgraded its Big Iron OS for better cloud, security, and AI support},
-  title        = {Cooney},
-}
-
-@Online{2020,
-  author = {openmainframe},
-  date   = {2020-04-30},
-  editor = {OpenMainframeProject},
-  title  = {Why Have Colleges and Universities Stopped Teaching Mainframe Skills?},
-  url    = {https://www.openmainframeproject.org/blog/2021/04/30/why-have-colleges-and-universities-stopped-teaching-mainframe-skills},
-}
-
-@Article{Almekinders2022,
-  author       = {Sander Almekinders},
-  date         = {2022-04-05},
-  journaltitle = {Techzine},
-  title        = {IBM introduceert z16 mainframe met Telum-chip voor realtime AI},
-}
-
-@Thesis{Cammarota2020,
-  author      = {Rosario Cammarota},
-  date        = {2020-08-10},
-  institution = {Intel Labs},
-  title       = {Trustworthy AI Inference Systems: An Industry Research View},
-  type        = {resreport},
-}
-
-@Article{Overby2017,
-  author       = {Stephanie Overby and Lynn Greiner and Lauren Gibbons Paul},
-  date         = {2017-07-05},
-  journaltitle = {CIO},
-  title        = {What is an SLA? Best practices for service-level agreements},
-}
-
-@Article{Saran2022,
-  author       = {Cliff Saran},
-  date         = {2022-04-05},
-  journaltitle = {Computerweekly},
-  title        = {IBM z16 tackles financial fraud and quantum hacks},
-}
-
-@TechReport{Astadia2021,
-  author      = {Astadia},
-  date        = {2021-04-01},
-  institution = {Astadia},
-  title       = {IBM z/OS Mainframe to Google Cloud Platform},
-}
-
-@TechReport{Zachry2022,
-  author      = {Mark Zachry},
-  date        = {2022-01-01},
-  institution = {Utah State University},
-  title       = {CONSTRUCTING USABLE DOCUMENTATION:A STUDY OF COMMUNICATIVE PRACTICESAND THE EARLY USES OF MAINFRAMECOMPUTING IN INDUSTRY},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}

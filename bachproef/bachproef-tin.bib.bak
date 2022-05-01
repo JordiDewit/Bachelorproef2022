@@ -48,4 +48,132 @@
   title        = {The mainframe Dilemma: Coping with an aging workforce},
 }
 
+@Article{Sarkar2020,
+  author       = {Subhasish Sarkar},
+  date         = {2020-09-10},
+  journaltitle = {Planet Mainframe},
+  title        = {An overview of the Parallel Sysplex and Coupling Facility on the IBM mainframes},
+}
+
+@Online{2020,
+  author = {openmainframe},
+  date   = {2020-04-30},
+  editor = {OpenMainframeProject},
+  title  = {Why Have Colleges and Universities Stopped Teaching Mainframe Skills?},
+  url    = {https://www.openmainframeproject.org/blog/2021/04/30/why-have-colleges-and-universities-stopped-teaching-mainframe-skills},
+}
+
+@Article{Cooney2021,
+  author       = {Michael Cooney},
+  date         = {2021-07-27},
+  journaltitle = {Networkworld},
+  title        = {IBM upgraded its Big Iron OS for better cloud, security, and AI support},
+}
+
+@Article{Almekinders2022,
+  author       = {Sander Almekinders},
+  date         = {2022-04-05},
+  journaltitle = {Techzine},
+  title        = {IBM introduceert z16 mainframe met Telum-chip voor realtime AI},
+}
+
+@Thesis{Cammarota2020,
+  author      = {Rosario Cammarota},
+  date        = {2020-08-10},
+  institution = {Intel Labs},
+  title       = {Trustworthy AI Inference Systems: An Industry Research View},
+  type        = {resreport},
+}
+
+@Article{Overby2017,
+  author       = {Stephanie Overby and Lynn Greiner and Lauren Gibbons Paul},
+  date         = {2017-07-05},
+  journaltitle = {CIO},
+  title        = {What is an SLA? Best practices for service-level agreements},
+}
+
+@Article{Saran2022,
+  author       = {Cliff Saran},
+  date         = {2022-04-05},
+  journaltitle = {Computerweekly},
+  title        = {IBM z16 tackles financial fraud and quantum hacks},
+}
+
+@TechReport{Astadia2021,
+  author      = {Astadia},
+  date        = {2021-01-01},
+  institution = {Astadia},
+  title       = {IBM z/OS Mainframe to Google Cloud Platform},
+}
+
+@TechReport{Zachry2001,
+  author      = {Mark Zachry},
+  date        = {2001-01-01},
+  institution = {Utah State University},
+  title       = {CONSTRUCTING USABLE DOCUMENTATION:A STUDY OF COMMUNICATIVE PRACTICESAND THE EARLY USES OF MAINFRAMECOMPUTING IN INDUSTRY},
+}
+
+@Online{Allison2016,
+  author = {Brett Allison},
+  date   = {17-10-2016},
+  editor = {Intellimagic},
+  title  = {Which Workloads Should I Migrate to the Cloud?},
+  url    = {https://www.intellimagic.com/resources/general/blog/workloads-migrate-cloud/},
+}
+
+@Report{Khan2011,
+  author      = {Dost Muhammad Khan and Nawaz Mohamudally},
+  date        = {2011-09-12},
+  institution = {The Islamia University of Bahawalpur},
+  title       = {From Mainframe to Cloud Computing: A Study of Programming Paradigms with the evolution of Client-Server Architecture},
+  type        = {resreport},
+}
+
+@MastersThesis{Martikainen2018,
+  author      = {Toni Martikainen},
+  date        = {2018-01-01},
+  institution = {Lappeenranta University of Technology},
+  title       = {Migrating Mainframe Application to the Cloud},
+}
+
+@Online{Orban2016,
+  author = {Stephen Orban},
+  date   = {2016-11-01},
+  editor = {Medium},
+  title  = {6 Strategies for Migrating Application to the Cloud},
+  url    = {https://medium.com/aws-enterprise-collection/6-strategies-for-migrating-applications-to-the-cloud-eb4e85c412b4},
+}
+
+@Online{Korzenlowski2017,
+  author = {Paul Korzenlowski},
+  date   = {2017-12-11},
+  editor = {Paul Korzenlowski},
+  title  = {Build an application migration plan step by step},
+  url    = {https://www.techtarget.com/searchcloudcomputing/tip/Build-an-application-migration-plan-step-by-step},
+}
+
+@Online{Marble2017,
+  author = {Craig Marble},
+  date   = {2017-03-06},
+  editor = {Craig Marble},
+  title  = {https://www.informationweek.com/cloud/legacy-modernization-look-to-the-cloud-and-open-systems},
+  url    = {https://www.informationweek.com/cloud/legacy-modernization-look-to-the-cloud-and-open-systems},
+}
+
+@Report{Linthicum2016,
+  author      = {David S. Linthicum},
+  date        = {2016-10-01},
+  institution = {IEEE COMPUTER SOCIETY},
+  title       = {Practical Use ofMicroservicesin MovingWorkloads tothe Cloud},
+  type        = {techreport},
+}
+
+@Online{Linthicum2016a,
+  author = {David Linthicum},
+  date   = {2016-01-19},
+  editor = {David Linthicum},
+  title  = {From containers to microservices: Modernizing your core applications},
+  url    = {https://techbeacon.com/enterprise-it/containers-microservices-modernizing-legacy-applications},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
