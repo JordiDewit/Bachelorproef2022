@@ -176,4 +176,27 @@
   url    = {https://techbeacon.com/enterprise-it/containers-microservices-modernizing-legacy-applications},
 }
 
+@TechReport{Bucchiarone2018,
+  author      = {Antionio Bucchiarone and Nicola Dragoni and Scharhram Dustdar and Stephan T. Larsen and Manuel Mazzara},
+  date        = {2018-05-01},
+  institution = {Technical University of Denmark and Örebro University},
+  title       = {From Monolithicto Microservices},
+}
+
+@Online{Gillis2020,
+  author = {Alexander S. Gillis},
+  date   = {2020-04-01},
+  editor = {Alexander S. Gillis},
+  title  = {Amazon Web Services (AWS)},
+  url    = {https://www.techtarget.com/searchaws/definition/Amazon-Web-Services},
+}
+
+@Online{Valence2022,
+  author = {Phil de Valence},
+  date   = {2022-12-17},
+  editor = {Phil de Valence},
+  title  = {Introducing AWS Mainframe Modernization},
+  url    = {https://www.youtube.com/watch?v=07u4ANDTZt8},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}
