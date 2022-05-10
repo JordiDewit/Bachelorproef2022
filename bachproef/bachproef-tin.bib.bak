@@ -191,12 +191,25 @@
   url    = {https://www.techtarget.com/searchaws/definition/Amazon-Web-Services},
 }
 
-@Online{Valence2022,
+@Online{Valence2021,
   author = {Phil de Valence},
-  date   = {2022-12-17},
+  date   = {2021-12-17},
   editor = {Phil de Valence},
   title  = {Introducing AWS Mainframe Modernization},
   url    = {https://www.youtube.com/watch?v=07u4ANDTZt8},
+}
+
+@Manual{AWS2021,
+  author = {AWS},
+  date   = {2021-11-30},
+  editor = {AWS},
+  title  = {AWS Mainframe Modernization: User Guide},
+}
+
+@Book{Sbarski2017,
+  author = {Peter Sbarski},
+  date   = {2017-04-17},
+  title  = {Serverless architecture on AWS: With example using AWS Lambda},
 }
 
 @Comment{jabref-meta: databaseType:biblatex;}
