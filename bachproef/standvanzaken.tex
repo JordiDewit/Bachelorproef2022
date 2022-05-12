@@ -180,18 +180,71 @@ AWS Lambda is een compute service dat code uitvoert op de Amazon Web Services in
     \end{subfigure}
 \end{figure}
 
-Als praktische uitwerking is in het onderzoek is met behulp van een AWS Lambda functie een kleine COBOL applicatie uitgevoerd op het AWS platform. Deze uitwerking werd gedaan met behulp van het stappenplan van \textcite{Paika2020}. Volgens \textcite{Paika2020} is dit een ideale manier om aan te tonen hoe een AWS Lambda functie in zijn werk gaat. Eerst en vooral werd de COBOL code voor een simpel ``Hello World `` programma lokaal compileerd en uitgevoerd in een terminal zoals hieronder weergegeven. De compiler die hier werd gebruikt is GnuCOBOL.  
+\newpage
+
+Als praktische uitwerking is in het onderzoek is met behulp van een AWS Lambda functie een kleine COBOL applicatie gedeployed op het AWS platform. Deze uitwerking werd gedaan met behulp van het stappenplan van \textcite{Paika2020}. Volgens \textcite{Paika2020} is dit een ideale manier om aan te tonen hoe een AWS Lambda functie in zijn werk gaat. Eerst en vooral moet de COBOL code voor een simpel ``Hello World `` programma lokaal gecompileerd en uitgevoerd worden in een terminal zoals hieronder weergegeven. De compiler die in dit onderzoek werd gebruikt is GnuCOBOL.  
     \begin{figure}[h]
         \centering
-        \includegraphics[width=10cm]{gnucobol}
+        \includegraphics[width=7cm]{gnucobol}
         \caption{Het lokaal uitvoeren van een COBOL programma met GnuCOBOL.}
      \end{figure}
  
- Vervolgens was het de bedoeling volgens het stappenplan van \textcite{Paika2020} dat we een runtimeomgeving opzetten door gebruik te maken van een AWS Lambda functie. Dit kon bereikt worden via de Amazon Linux 2 AWS Lambda executieomgeving. Hiervoor was het nodig om een bootstrap script te creëren om een uitvoering te voorzien zodra de Lambda functie wordt geïnitialiseerd. Amazon Linux 2 kon worden gevirtualiseerd in een docker file. Hier was het mogelijk om het COBOL programma te compileren omdat Amazon Linux 2 ook gebruik maakt van GnuCOBOL. Op onderstaande afbeelding is te zien hoe dit proces in zijn werk ging. 
- 
- WORDT VERVOLGD...
- 
  \newpage
+ 
+ Vervolgens is het de bedoeling volgens het stappenplan van \textcite{Paika2020} dat we een runtimeomgeving opzetten door gebruik te maken van een AWS Lambda functie. Dit kan bereikt worden via de Amazon Linux 2 AWS Lambda executieomgeving. Hiervoor is het nodig om een bootstrap script te creëren om een uitvoering te voorzien zodra de Lambda functie wordt geïnitialiseerd. Amazon Linux 2 kan worden gevirtualiseerd in een docker file. Hier is het mogelijk om het COBOL programma te compileren omdat Amazon Linux 2 ook gebruik maakt van GnuCOBOL. 
+ 
+ Er moet een docker file aangemaakt worden. Hiervoor kan je de texteditor vim gebruiken. Het bestand met de instructies in voor het aanmaken van de docker image dient zich in een lege directory te bevinden samen met het bestand waar de code van de COBOL applicatie instaat. Deze stappen werden niet uitgelegd in de gids van \textcite{Paika2020}. Echter zijn deze van essentieel belang voor het slagen van het project. Op onderstaande afbeelding is te zien hoe dit proces in zijn werk ging. 
+ 
+  \begin{figure}[h]
+     \centering
+     \includegraphics[width=7cm]{bootstrap_script}
+     \caption{De docker file met instructies voor de docker image aan te maken.}
+ \end{figure}
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{build_imag}
+    \caption{De uitvoering van het bootstrap script voor het aanmaken van de docker image.}
+\end{figure}
+
+\newpage
+Het onderstaande script build.sh zorgt ervoor de een uitvoerbaar bestand wordt gekopieerd vanuit de docker container naar het lokale bestandssysteem. Dat bestand dient voor het deployen naar Amazon Web Services. 
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{script}
+    \caption{Het aanmaken van het build.sh bestand voor het kopiëren van het uitvoerbaar bestand.}
+\end{figure}
+
+Hieronder bevindt zich nu een afbeelding van het hello bestand dat is aangemaakt door build.sh. Dit bestand is mogelijk om uit te voeren in AWS Lambda.
+
+  \begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{executable}
+    \caption{Het uitvoerbaar bestand hello in de COBOL directory.}
+\end{figure}
+
+\newpage
+In de volgende stap is het de bedoeling dat er een Lambda runtimeomgeving wordt opgezet. Hiervoor dient opnieuw een bootstrap script geschreven te worden die verantwoordelijk is voor het bootstrappen van de runtime omgeving. Het volgende script is opgesteld aan de hand van een tutorial die AWS biedt \autocite{AWS2022}. 
+
+ \begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{buildruntime}
+    \caption{Het runtimeomgevingsscript volgens de tutorial van \autocite{AWS2022}.}
+\end{figure}
+
+In de laatste stap naar een succesvol deployment van de COBOL applicatie moet de Lambda functie en de API Gateway gecreëerd worden. Wat in een eerdere paragraaf werd aangekaart is het serverless computing principe. Om dit principe toe te passen dient er eerst een package ``serverless `` geïnstalleerd te worden voor het serverless.yaml bestand te kunnen aanmaken dat onze Lambda functie en API Gateway definieert. 
+
+ \begin{figure}[h]
+    \centering
+    \includegraphics[width=7cm]{serverless}
+    \caption{Het serverless.yaml bestand voor het defniëren van de Lambda functie en API Gateway.}
+\end{figure}
+
+\newpage
+
+Het bovenste script zorgt ervoor dat ons programma hello gedefinieerd is als functie. Wanneer deze opgeroepen wordt zal er een HTTP GET request gemaakt worden naar de API Gateway. Hierbij komen we aan het einde van alle stappen die \textcite{Paika2020} uitgewerkt heeft. Bij het uitvoeren van het script build.sh is het COBOL programma gedeployed op AWS Lambda en zichtbaar in de browser. De migratie is compleet.
+
  
  \section{\IfLanguageName{dutch}{De resultaten van de bevragingen}{The results of the survey}}
  \label{sec:De resultaten van de bevraging}
@@ -223,7 +276,6 @@ De resultaten zijn opgedeeld per vraag.
 
 Uit bovenstaande grafiek is af te leiden dat de participanten die we classificeren als een bedrijf gelijk verdeeld waren. Uit elke sector heeft juist één bedrijf deelgenomen aan de bevraging rond het onderzoek. Daarnaast heeft elk bedrijf uit deze grafiek een mainframe in gebruik. 
 
-\newpage
 
  \subsubsection{\IfLanguageName{dutch}{Wat is het aantal van werknemers die werk leveren dat te maken heeft met het ontwikkelen, onderhouden of beheren van een mainframe?}{What is the number of employees who develop, maintain or manage a mainframe?}}
 \label{sec:Wat is het aantal van werknemers die werk leveren dat te maken heeft met het ontwikkelen, onderhouden of beheren van een mainframe?}
@@ -235,6 +287,8 @@ Uit bovenstaande grafiek is af te leiden dat de participanten die we classificer
 \end{figure}
 
 Elk van de bevraagde bedrijven heeft meer dan 50 mensen in dienst die werken op mainframe. Dit omvat het ontwikkelen van applicaties, het onderhouden van applicaties of beheren van het systeem. Hieruit kan geconcludeerd worden hoe hoog de nood is aan mainframewerkkrachten. Het is echter een groot deel van een IT-afdeling binnen de deelnemende organisaties.
+
+\newpage
 
  \subsubsection{\IfLanguageName{dutch}{Wat is de gemiddelde leeftijd van het mainframepersoneel?}{What is the average age of the mainframe staff?}}
 \label{sec:Wat is de gemiddelde leeftijd van het mainframepersoneel?}
