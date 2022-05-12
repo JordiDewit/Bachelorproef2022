@@ -212,4 +212,11 @@
   title  = {Serverless architecture on AWS: With example using AWS Lambda},
 }
 
+@Manual{Paika2020,
+  author = {Chris Paika},
+  date   = {2020-09-27},
+  editor = {Paika},
+  title  = {Running COBOL on AWS Lambda},
+}
+
 @Comment{jabref-meta: databaseType:biblatex;}

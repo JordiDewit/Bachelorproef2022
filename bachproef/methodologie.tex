@@ -16,14 +16,63 @@
 \section{\IfLanguageName{dutch}{De literatuur- en vergelijkende studie}{Literature and comparitive study}}
 \label{sec:De literatuur- en vergelijkende studie}
 
-Ik ben het onderzoek gestart door op zoek te gaan naar bevestigingen omtrent de vooroordelen rond vergrijzing en afname van de mainframe-expertise. Hiervoor heb ik een combinatie willen implementeren van zowel oudere bronnen en recente bronnen. Daarnaast heb ik voor dit onderwerp een bevraging opgesteld waaruit moet kunnen geconcludeerd worden dat hedendaagse bedrijven werkelijk met deze problemen kampen. 
+Ik ben het onderzoek gestart door op zoek te gaan naar bevestigingen omtrent de vooroordelen rond vergrijzing en de afname van mainframe-expertise. Hiervoor heb ik een combinatie willen implementeren van zowel oudere bronnen als recente bronnen. Daarnaast heb ik voor dit onderwerp een bevraging opgesteld waaruit moet kunnen geconcludeerd worden dat hedendaagse bedrijven werkelijk met deze problemen kampen. 
 
-Vervolgens heb ik de laatste nieuwe IBM Z16 mainframe onderzocht. De bedoeling was dat ik de meest interessante nieuwigheden en innovaties kon schetsen voor de lezers van dit onderzoek. Voor die reden heb ik specifiek gezocht naar artikels waar journalisten de belangrijkste veranderingen aankaarten. Doormiddel van een excursie naar het IBM center in Montpellier wist ik al een tijdje voor de introductie dat er een nieuwe mainframe op komst was en daarom vond ik het zeker waard om deze nieuwe machine te vergelijken met gedistribueerde alternatieven.
+Vervolgens heb ik de laatste nieuwe IBM z16 mainframe onderzocht. De bedoeling hiervan was dat ik de meest interessante nieuwigheden en innovaties kon schetsen voor de lezers van dit onderzoek. Voor die reden ben ik uitsluitend gaan zoeken naar artikels waar journalisten de belangrijkste nieuwe features aan kaarten. Doormiddel van een excursie naar het IBM service center in Montpellier wist ik al een tijdje voor de introductie dat er een nieuwe mainframe op komst was. Daarom vond ik het zeker waard om deze nieuwe machine te vergelijken met gedistribueerde alternatieven. Ik heb hierbij vermeden om informatie te halen uit bronnen die in directe verbinding staan met het sales team IBM. Dit zou de uitspraken over de IBM z16 te subjectief maken. 
+
+Om onderzoek te doen naar een instelling die gespecialiseerd is in het moderniseren van mainframe workloads, heb ik mij verdiept in Astadia. Dit bedrijf heeft een whitepaper gepubliceerd waar ze diep in gaan op alle aspecten rond een migratie naar Google Cloud. In deze whitepaper gaven zij hun argumenten aan waarom Google Cloud beter zou zijn dan een traditionele mainframe voor het werken van grote workloads. 
 
 
 \section{\IfLanguageName{dutch}{De bevraging}{The survey}}
 \label{sec:De bevraging}
 
+Voor de bevraging heb ik gebruik gemaakt van Google Forms. Dit was de ideale tool om op een professionele manier een enqûete op te stellen waaruit ik de gewenste informatie kon halen. Om antwoorden te verkrijgen van de juiste mensen, moest ik nadenken over een geschikte plek voor het delen van mijn enquête. Hiervoor heb ik LinkedIn gekozen. Daarnaast heb ik ook mijn enquête via mail gestuurd naar verschillende bedrijven. 
+
+In dit onderzoek zijn twee enqûetes opgesteld voor verschillende doelgroepen. De ene doelgroep zijn organisaties die al dan niet workloads hebben die op een mainframe verwerkt worden. Het was de bedoeling dat deze doelgroep een antwoord gaf op de vragen rond gebrek aan expertise en migratieplannen. De andere doelgroep waren studenten computerwetenschappen en IT-professionals. Zij dienden een antwoord te geven op hoe zij staan tegenover mainframetechnologie en of zij interesse zouden hebben om hier meer over te leren. Hieruit kon in dit onderzoek een conclusie worden getrokken over waar de interesses liggen van de meeste IT-professionals en studenten.
+
+Hieronder bevinden zich de vragen die werden opgesteld voor de organisaties met mainframeworkloads:
+ \begin{itemize}
+    \item Wat is de naam van uw organisatie?
+    \item In welk sector is uw organisatie actief?
+    \item Maakt uw organisatie gebruik van een mainframe?
+    \item Hoeveel werknemers ontwikkelen, onderhouden of beheren software op een mainframe?
+    \item Wat is de gemiddelde leeftijd van het mainframepersoneel binnen uw organisatie?
+    \item Zijn er signalen dat weergeven dat er een gebrek is aan nieuwe mainframe-experten?
+    \item Wat is de visie van uw organisatie op de expertise rond mainframe?
+    \item Zijn er initiatieven genomen om interne opleidingen aan te bieden rond mainframetechnologie?
+    \item Waarvoor maakt uw organisatie gebruik van een mainframe?
+    \item Wat zijn voor uw organisatie de voordelen van een mainframe ten opzichte van andere platformen?
+    \item Wat zijn de nadelen van het mainframeplatform voor uw organisatie?
+    \item Zijn er migratieplannen naar andere platformen? Waarom wel/niet?
+    \item Indien er migratieplannen aanwezig zouden zijn, naar welke platformen zou dan worden gemigreerd?
+    \item Wat is de gemiddelde jaarlijkse kost van een mainframe aan uw organisatie?
+    \item Wat is de producent van de mainframe die uw organisatie bezit of gebruikt?
+    \item Zijn er plannen om nieuwe technologieën te implementeren op uw organisaties mainframeplatform?
+\end{itemize}
+
+\newpage
+
+Vervolgens bevinden zich hieronder de vragen die werden opgesteld voor de organisaties zonder mainframeworkloads:
+ \begin{itemize}
+    \item Waarom gebruikt uw organisatie geen mainframe?
+    \item Welk alternatief platform gebruikt uw organisatie?
+    \item Wat is de gemiddelde jaarlijkse kost van het alternatief platform?
+\end{itemize}
+
+Ten slotte bevinden zich de vragen voor studenten en IT-professionals hieronder:
+ \begin{itemize}
+    \item Wat is uw functie binnen IT? (Student, ontwikkelaar, analist, ...)
+    \item Weet u wat een mainframe is?
+    \item Bent u al in contact gekomen met mainframe op het werk of op school?
+    \item Hebt u ervaring met COBOL of PL/1?
+    \item Zou u geïnteresseerd zijn om te ontwikkelen op een mainframeplatform?
+    \item Indien u een student ben, zou u interesse hebben om voor mainframe-expert te studeren?
+    \item Waarom wel/niet zou u kiezen om mainframe-expert te worden?
+\end{itemize}
+
+
 
 \section{\IfLanguageName{dutch}{De praktische uitwerking}{The practical implementation}}
 \label{sec:De praktische uitwerking}
+
+Voor mijn praktische uitwerking ben ik op zoek gegaan naar een manier om aan te tonen wat de complexiteit is van een migratie. Om dit te schetsen wou ik een simpel ``Hello world `` COBOL applicatie migreren naar AWS. Omtrent dit klein project vond ik interessante informatie over het gebruik van een AWS Lamda functie en een publicatie met een gids. Deze gids heb ik dan vervolledigd om de ervaring te hebben in een kleinschalige migratie naar een gedistribueerde vorm van informatica. Daaruit was het mogelijk voor het onderzoek om een inschatting te maken van hoe complex een real life workload met afhankelijkheden en duizenden gebruikers echt is.
